@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>Survey Form</title>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<body>
+  <div><h1 id="title">Survey Form</h1></div>
+  <div>
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+    
+    <form id="survey-form" action="https://crossorigin.me/https://freecodecamp.com">
+      <div>
+        <label id="name-label" for="name">* Name:</label>
+        <input id="name" type="text" name="name" placeholder="Enter your name" required><br>
+      </div>
+      
+      <div>
+        <label id="email-label" for="email">* Email:</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required><br>
+      </div>
+      
+      <div>
+        <label id="number-label" for="number">* Age:</label>
+        <input id="number" type="number" name="number" placeholder="Age" min="18" max="120" required><br>
+      </div>
+        
+      <div>
+        <label id="dropdown-label" for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown" name="role">
+          <option disabled value>Select an option</option>
+          <option value="student">Student</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Full Time Learner</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select><br>
+      </div>
+        
+      <div>
+        <label id="radio-label" for="recommendation">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+        <div>
+          <input type="radio" name="recommendation" value="definitely">Definitely<br>
+          <input type="radio" name="recommendation" value="maybe">Maybe<br>
+          <input type="radio" name="recommendation" value="notSure">Not Sure
+        </div>
+      </div>
+      
+      <div>
+        <label id="checkbox-label">Things that should be improved in the future (Check all that apply):</label>
+        <div>
+          <input type="checkbox" name="futureImprovements1" value="frontEnd">Front-end Projects<br>
+          <input type="checkbox" name="futureImprovements2" value="backEnd">Back-end Projects<br>
+          <input type="checkbox" name="futureImprovements3" value="dataVis">Data Visualization<br>
+          <input type="checkbox" name="futureImprovements4" value="additionalCourses">Additional Courses<br>
+        </div>
+      </div>
+      
+      <div>
+        <label id="textArea-label" for="comments">Any Comments or Suggestions?</label>
+        <textarea id="comments" name="comment" style="height:50px; resize:vertical;" placeholder="Enter your comment here..."></textarea>
+      </div>
+      
+      <div>
+        <input id="submit" type="submit" value="Submit">
+      </div>
+      
+    </form>
+  </div>
+</body>
+</html>
