@@ -1,0 +1,31 @@
+@media (max-width: 600px) {
+  header {flex-wrap: wrap;}
+}
+
+.logo {
+  
+}
+
+.nav-link {
+  
+}
+
+.btn {
+  
+}
+
+.container {
+  
+}
+
+#features {
+  
+}
+
+#how-it-works {
+  display: flex;
+}
+
+#pricing {
+  
+}
